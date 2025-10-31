@@ -1,0 +1,223 @@
+
+
+.parccours-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.parccours-container h2 {
+  font-size: 2rem;
+  color: #00ffff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  font-family: 'Courier New', monospace; /* Police style terminal */
+  letter-spacing: 1px;
+}
+
+/* Optionnel : effet clignotant comme un curseur */
+.parccours-container h2::after {
+  content: '_';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.contenu-parcours {
+  opacity: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 106, 125, 0.2),
+    rgba(0, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
+  animation: paragraph-appear 1.5s ease-in forwards;
+}
+
+.contenu-parcours p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  position: relative;
+  padding-left: 20px;
+}
+
+
+.contenu-parcours .conclusion {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 0;
+}
+
+
+.contenu-parcours a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  padding: 0 5px;
+}
+
+.contenu-parcours a:hover {
+  border-bottom: 2px solid #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+@keyframes paragraph-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .contenu-parcours {
+    padding: 25px;
+  }
+
+  .contenu-parcours p {
+    font-size: 1rem;
+  }
+}
+
+.timeline-section {
+  margin-bottom: 30px;
+  padding: 20px;
+
+  border-radius: 8px;
+  /* transition: all 0.3s ease; */
+}
+.timeline-section h3 {
+  color: #00ffff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.timeline-section p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.depart {
+  border-left: 4px solid #00ffff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 2%,
+    rgba(0, 0, 0, 0.3) 2%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+.pause {
+  border-left: 4px solid #dbe20e;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 2%,
+    rgba(0, 0, 0, 0.3) 2%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.reprise{
+      border-left: 4px solid #00ffff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 7%,
+    rgba(0, 0, 0, 0.3) 7%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.maj-attente{
+ 
+  border-left: 4px solid #e20e0e;
+  background: linear-gradient(
+    to right,
+   rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 7%,
+    rgba(0, 0, 0, 0.3) 7%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+
+}
+
+.maj-faite{
+          border-left: 4px solid #00ffff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 40%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.python{
+              border-left: 4px solid #00ffff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 60%,
+    rgba(0, 0, 0, 0.3) 60%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+.flutter{
+                  border-left: 4px solid #00ffff;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 98, 0.109) 0%,
+    rgba(1, 36, 14, 0.3) 75%,
+    rgba(0, 0, 0, 0.3) 75%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+}
+
+
+
+.conclusion {
+  margin-top: 30px !important;
+  font-size: 1.2rem !important;
+}
