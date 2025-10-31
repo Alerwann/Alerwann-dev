@@ -8,7 +8,9 @@ export default function Header() {
       <div className="contenaire-entete">
         <div className="container-titre">
           <p className="titre-header">Alerwann</p>
-          <p className="sous-titre-header">Un développeur en cours de chargement...</p>
+          <p className="sous-titre-header">
+            Un développeur en cours de chargement...
+          </p>
         </div>
         <div className="image-cont">
           {" "}
@@ -25,6 +27,8 @@ export default function Header() {
           <Link href="/">Accueil</Link>
           <span className="separateur">|</span>
           <Link href="/about">À propos</Link>
+          <span className="separateur">|</span>
+          <Link href="/legalinformation">Informations Légales</Link>
         </nav>
       </div>
     </header>

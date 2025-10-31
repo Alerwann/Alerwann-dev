@@ -1,0 +1,131 @@
+.app-card {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 106, 125, 0.15),
+    rgba(0, 0, 0, 0.4)
+  );
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.app-card:hover::before {
+  left: 100%;
+}
+
+.app-card:hover {
+  border-color: #00ffff;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 106, 125, 0.25),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.app-status {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status-badge.online {
+  background: rgba(0, 255, 98, 0.2);
+  color: #00ff62;
+  border: 1px solid #00ff62;
+}
+
+.status-badge.dev {
+  background: rgba(255, 200, 0, 0.2);
+  color: #ffc800;
+  border: 1px solid #ffc800;
+}
+
+.app-card h3 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.app-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tech-tag {
+  padding: 6px 14px;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 15px;
+  color: #00ffff;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.app-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #006b7d, #00ffff);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.app-link:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.4);
+}
+
+.app-link.disabled {
+  background: rgba(100, 100, 100, 0.3);
+  color: #888;
+  cursor: not-allowed;
+}
+
+.app-link.disabled:hover {
+  transform: none;
+  box-shadow: none;
+}

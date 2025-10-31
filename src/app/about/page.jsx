@@ -1,14 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import LoadingBar from "../../components/loading-bar/LoadingBar";
 import "./about.css"
 
 export default function About() {
+
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText(true);
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <main>
+    <main className="main-container">
       <div className="parccours-container">
         <h2>Log de chargement des connaissances d'Alerwann</h2>
         <LoadingBar />
+        {showText &&(
         <div className="contenu-parcours">
           <section className="timeline-section depart">
             <h3>Mise en Route du téléchargement</h3>
@@ -100,7 +114,7 @@ export default function About() {
             de chargement. J'apprends en concevant des applications qui me sont
             utiles. Je vous partage donc celles-ci.
           </p>
-        </div>
+        </div>)}
       </div>
     </main>
   );
