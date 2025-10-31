@@ -102,7 +102,7 @@ export default function Home() {
           />
 
           <AppCard
-            title="Passord Robust Creator"
+            title="Password Robust Creator"
             description="Application générant des mots de passe sécurisés, personnalisés ou non. "
             tech={["Flutter", "Dart"]}
             link="https://apps.apple.com/us/app/password-robust-creator/id6753916678"
