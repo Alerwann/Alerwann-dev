@@ -37,7 +37,7 @@ export default function Home() {
             <span className="version">v2025.10</span>
           </h2>
           <p>
-            L'applications Alerwann gère l'apprentissage de différents langages
+            L'application Alerwann gère l'apprentissage de différents langages
             de programmation.
           </p>
           <p className="p-border">
@@ -69,7 +69,7 @@ export default function Home() {
             <div className="text-evolutif">
               <p>Consolider ses connaissances en intégrant une formation.</p>
               <p>
-                Se concentrer sur un seul langage pour le maîtriser réelement.
+                Se concentrer sur un seul langage pour le maîtriser réellement.
               </p>
               <p>Continuer d'apprendre en manipulant et en créant.</p>
             </div>
