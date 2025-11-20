@@ -1,11 +1,10 @@
-/* eslint-disable react/no-unescaped-entities */
+
 
 "use client";
 import LoadingBar from "../components/loading-bar/LoadingBar";
 import { useEffect, useState } from "react";
 import "./home.css";
 import AppCard from "../components/appcard/AppCard";
-import Link from "next/link";
 
 export default function Home() {
   const [showText, setShowText] = useState(false);
@@ -83,6 +82,30 @@ export default function Home() {
         </p>
 
         <div className="apps-grid">
+              <AppCard
+            title="TDAH'elp"
+            description="Application d'aide à la réalistion de tâches quotidienne pour les personnes atteintes de TDAH            "
+            tech={["Flutter", "Dart"]}
+            link="https://apps.apple.com/app/tdahelp/id6755381061"
+            status="En ligne"
+            platform={["iOS"]}
+          />
+          <AppCard
+            title="QR create and read"
+            description="Site pour créer et scanner des codes QR "
+            tech={["Next.js", "React"]}
+            link="https://vercel.com/alerwanns-projects?repo=https://github.com/Alerwann/qr_create_read"
+            status="En ligne"
+            platform={["Web"]}
+          />
+            <AppCard
+            title="Password Robust Creator"
+            description="Application générant des mots de passe sécurisés, personnalisés ou non. "
+            tech={["Flutter", "Dart"]}
+            link="https://apps.apple.com/us/app/password-robust-creator/id6753916678"
+            status="En ligne"
+            platform={["iOS", "En attente de validation pour android"]}
+          />
           <AppCard
             title="alerwann-fortquest"
             description="Mon premier site web - Site répertoriant des vidéos sur des quêtes fortnite  "
@@ -101,14 +124,7 @@ export default function Home() {
             platform={["Github"]}
           />
 
-          <AppCard
-            title="Password Robust Creator"
-            description="Application générant des mots de passe sécurisés, personnalisés ou non. "
-            tech={["Flutter", "Dart"]}
-            link="https://apps.apple.com/us/app/password-robust-creator/id6753916678"
-            status="En ligne"
-            platform={["iOS", "En attente de validation pour android"]}
-          />
+        
 
           <AppCard
             title="Ecol'eau"
@@ -127,6 +143,8 @@ export default function Home() {
             status="En développement"
             platform={["Github"]}
           />
+      
+          
         </div>
       </section>
     </main>
