@@ -49,7 +49,7 @@ export default function Home() {
         <div className="maj-container">
           <button onClick={() => handleButton()}>
             <h2>
-              Amélioration de la mise à jour 2025.10 {showText ? "[-]" : "[+]"}
+              Amélioration de la mise à jour 2026.04 {showText ? "[-]" : "[+]"}
             </h2>
           </button>
           {showText && (
@@ -66,9 +66,9 @@ export default function Home() {
           </button>
           {showTextF && (
             <div className="text-evolutif">
-              <p>Consolider ses connaissances en intégrant une formation.</p>
+              <p>Faire une formation d'administrateur Systèmes et Réseaux</p>
               <p>
-                Se concentrer sur un seul langage pour le maîtriser réellement.
+                Continuer l'apprentissage du développement avec Next.Js
               </p>
               <p>Continuer d'apprendre en manipulant et en créant.</p>
             </div>
@@ -104,13 +104,13 @@ export default function Home() {
             tech={["Flutter", "Dart"]}
             link="https://apps.apple.com/us/app/password-robust-creator/id6753916678"
             status="En ligne"
-            platform={["iOS", "En attente de validation pour android"]}
+            platform={["iOS", "Android"]}
           />
           <AppCard
             title="alerwann-fortquest"
             description="Mon premier site web - Site répertoriant des vidéos sur des quêtes fortnite  "
             tech={["React", "JavaScript", "CSS"]}
-            link="https://www.alerwann-fortquest.com"
+            link="https://alerwann.github.io/alerwann-fortquest/"
             status="En ligne"
             platform={["Web"]}
           />
@@ -120,7 +120,7 @@ export default function Home() {
             description="Choix d'envoie d'un message résumant la journée et choix d'ouverture d'application."
             tech={["Python", "Tkinter"]}
             link="https://github.com/Alerwann/Assistant_Projet.git"
-            status="En développement"
+            status="Fonctionnelle"
             platform={["Github"]}
           />
 
@@ -140,7 +140,7 @@ export default function Home() {
             description="Générateur d'une liste de film d'horreur en fonction des goûts d'un utilisateur"
             tech={["Python", "PySide6"]}
             link="https://github.com/Alerwann/IA_Horror_Film.git"
-            status="En développement"
+            status="Fonctionnel"
             platform={["Github"]}
           />
       

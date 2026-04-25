@@ -11,8 +11,8 @@
 .main-title h1 {
   font-size: 2.5rem;
   background: linear-gradient(135deg, #00ffff, #006b7d);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
   text-align: center;
 }

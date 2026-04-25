@@ -76,11 +76,11 @@ export default function About() {
               J'ai commencé par HTML, CSS, JS, React, j'ai ainsi créer mon
               premier site :
               <a
-                href="https://www.alerwann-fortquest.com"
+                href="https://alerwann.github.io/alerwann-fortquest/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {"  "}
+          
                 alerwann-forquest.com
               </a>
             </p>
@@ -108,7 +108,20 @@ export default function About() {
               langage.
             </p>
           </section>
-
+                <section className="timeline-section immersion">
+            <h3>Immersion Holberton School</h3>
+            <p>
+                Pendant 15 jours j'ai intégré Holberton School de Dijon pour faire les tests d'entrées.
+                Être avec des étudiants, venant de différents horizons et à différents niveaux de leur cursur,
+                pouvoir discuter stratégie pour leur site était enrigissant. Mon constat à été que le développement et
+                l'informatique sont vraiment les domaines dans lesquels je veux travailler. L'IA a aussi beaucoup évolué et rapidement, 
+                et pour moi il est indispensable d'être plus qu'une personne qui tape du code et maîtriser son domaine. La cybersécurité 
+                est un enjeu très important de nos jours. L'ia peut détecter les failles, de plus en plus facilement. 
+            </p>
+            <p>
+           C'est pour ça que je compte me former dans la cybersécurité et quoi de mieux qu'une alternance pour cela?
+            </p>
+          </section>
           <p className="conclusion">
             Et nous voilà aujourd'hui, les connaissances sont toujours en cours
             de chargement. J'apprends en concevant des applications qui me sont
