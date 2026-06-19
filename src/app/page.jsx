@@ -66,7 +66,7 @@ export default function Home() {
           </button>
           {showTextF && (
             <div className="text-evolutif">
-              <p>Faire une formation d'administrateur Systèmes et Réseaux</p>
+              <p>Faire une formation de concepteur d'application</p>
               <p>
                 Continuer l'apprentissage du développement avec Next.Js
               </p>
